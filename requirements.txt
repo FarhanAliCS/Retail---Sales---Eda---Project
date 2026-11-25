@@ -5,3 +5,4 @@ seabornpandas
 numpy
 matplotlib
 seaborn
+scikit-learn

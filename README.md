@@ -67,5 +67,18 @@ python eda_project.py
 - Correlation does not prove causation.
 - Median imputation can understate real variation.
 
+## Predictive Model: Profit Regression
+Predicted profit per order from price, quantity, discount, category, region, customer details and order month, using scikit-learn pipelines (imputation, scaling, one-hot encoding).
+
+| Model | MAE | RMSE | R² (test) | R² (5-fold CV) |
+|---|---|---|---|---|
+| Baseline (mean) | 68.92 | 125.26 | 0.00 | -0.00 |
+| Linear Regression | 51.00 | 92.73 | 0.45 | 0.45 |
+| Random Forest | 14.41 | 20.01 | 0.97 | 0.97 |
+
+Random Forest explains about 97% of the variance in profit, with a typical error of about $14 per order, against $69 for a naive average. Revenue and margin were excluded as features to avoid data leakage.
+
+![Actual vs predicted](figures/08_actual_vs_predicted.png)
+
 ## Tools
-Python 3 · Pandas · NumPy · Matplotlib · Seaborn
+Python 3 · Pandas · NumPy · Matplotlib · Seaborn · scikit-learn
