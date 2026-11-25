@@ -1,0 +1,7 @@
+- Technology drives the most revenue ($1,651K, 69% of total).
+- Office Supplies has the best profit margin (21.1%); Furniture the worst (4.4%).
+- Revenue peaks in December; Nov-Dec account for 31% of revenue.
+- High discounts (20-30%) average -43.51 USD profit/order vs +80.59 USD with no discount.
+- Shipping time vs rating r = -0.28; discount vs rating r = -0.26.
+- South region is slowest to ship (5.0 days vs 3.0 elsewhere).
+- 45 bulk-order outliers flagged; revenue is right-skewed (skew 21.5), so median ($160) beats mean ($476) as a typical-order measure.
